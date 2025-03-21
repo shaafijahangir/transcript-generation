@@ -12,7 +12,7 @@
     <ul>
         {% for user in users %}
         <li>{{ user.name }} - {{ user.email }}
-            <!-- Form to redirect to delete confirmation page -->
+            <!-- Link to the delete confirmation page -->
             <form action="/delete_confirm/{{ user.id }}" method="GET" style="display:inline;">
                 <button type="submit">Delete</button>
             </form>

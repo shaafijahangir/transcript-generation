@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Deletion</title>
+</head>
+
+<body>
+    <h1>Are you sure you want to delete {{ user.name }}?</h1>
+    <form action="/delete_confirm/{{ user.id }}" method="POST">
+        <button type="submit">Yes, Delete</button>
+    </form>
+    <a href="/users">Cancel</a>
+</body>
+
+</html>
